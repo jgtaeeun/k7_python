@@ -22,7 +22,7 @@ def generate_lotto_numbers():
     bonus_number = random.choice(numbers)
     
     return lotto_numbers, bonus_number        #파이썬은 return타입이 없기에 return값이 타입이 다른 여러 개 가능하다.
-def winner_check(lotto_numbers, lotto_bonus_number,winning_numbers, winning_bonus_number):
+def winner_check(lotto_numbers, lotto_bonus_number,winning_numbers, winning_bonus_number,idx):
     if lotto_numbers == winning_numbers and lotto_bonus_number == winning_bonus_number:
         print(f"{idx}번째 로또 복권: 1등 당첨!")
     elif lotto_numbers == winning_numbers:
@@ -51,8 +51,21 @@ for idx in range(1, 101):
 # print(lotto_list)
 
 # 100장의 로또 번호 당첨 여부 판별   
-for idx in range(len(lotto_list)):
-    # print((lotto_list[idx])[0])
-    winner_check((lotto_list[idx])[0], (lotto_list[idx])[1],winning_numbers, winning_bonus_number)
+# for idx in range(len(lotto_list)):
+#     # print((lotto_list[idx])[0])
+#     winner_check((lotto_list[idx])[0], (lotto_list[idx])[1],winning_numbers, winning_bonus_number)
 
-    
+#  ({5, 39, 9, 21, 24, 26}, 2) (a,b)꼴
+idx=1
+for a,b in lotto_list:   
+     
+     winner_check(a, b,winning_numbers, winning_bonus_number,idx)
+     idx=idx+1
+
+#   0 , ({5, 39, 9, 21, 24, 26}, 2) enumerate()
+# for indexvalue ,number_set in enumerate(lotto_list):   
+#     print(number_set)
+#     for key, value in enumerate(number_set):
+#         print(number_set[0],number_set[1])
+#         winner_check(number_set[0], number_set[1], winning_numbers, winning_bonus_number, indexvalue+1 )
+#         break

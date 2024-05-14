@@ -65,24 +65,12 @@
 #     print(H+24-1,M+60-45)
 
 
-num1,num2=input().split() 
-num1=int(num1)
 
-# print(type(num1), type(num2))
-list_num=list(num2)
-list_num.sort(reverse=True)
-# print(list_num)
 
-list_result=[]
-for i in list_num:
-    i=int(i)
-    print(f"{num1*i}")
-    list_result.append(num1*i)
-# print(list_result)
-list_result[1]=list_result[1]*10
-list_result[2]=list_result[2]*100
 
-print(list_result[0]+list_result[1]+list_result[2])
+
+
+  
     
 
 
