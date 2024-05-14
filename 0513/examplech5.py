@@ -101,3 +101,17 @@ for i in current_list :
 # 사용가능한 사용자 이름입니다.
 # 사용가능한 사용자 이름입니다.
 # 사용가능한 사용자 이름입니다.
+
+
+#5-11
+list_num=[1,2,3,4,5,6,7,8,9]
+
+for i in list_num:
+   if i==1:
+      print(f'{i}st')
+   elif i==2:
+      print(f'{i}nd')
+   elif i==3:
+      print(f'{i}rd')
+   else :
+      print(f'{i}st')   

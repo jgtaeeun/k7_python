@@ -74,7 +74,8 @@ print(list_1to10[:3])
 print(list_1to10[3:6])
 print(list_1to10[6::])
 
-#4-11
+#4-11  
+#4-12 
 pizza=['페퍼로니','포테이토']
 pizza_copy=['페퍼로니','포테이토']
 pizza.append('불고기')
@@ -86,6 +87,7 @@ for i in pizza :
     print(f'내가 좋아하는 피자는 {i}')
 for i in pizza_copy:
     print(f'내 친구가 좋아하는 피자는 {i}')
+
 
 
 

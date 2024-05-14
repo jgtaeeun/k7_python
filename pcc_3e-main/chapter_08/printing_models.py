@@ -17,7 +17,7 @@ def show_completed_models(completed_models):
 unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 
-print_models(unprinted_designs, completed_models)
+print_models(unprinted_designs[:], completed_models[:])
 print(f"원래 변수 출력={unprinted_designs}")
 print(f"수정 변수 출력={completed_models}")
 show_completed_models(completed_models)
