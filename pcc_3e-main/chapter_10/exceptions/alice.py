@@ -1,6 +1,7 @@
 from pathlib import Path
-
-
+import os
+print(os.getcwd())
+os.chdir('exceptions')
 path = Path('alice.txt')
 try:
     contents = path.read_text(encoding='utf-8')

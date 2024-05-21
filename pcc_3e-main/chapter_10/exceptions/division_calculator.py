@@ -1,3 +1,11 @@
+#10.3.2    try-except문
+
+# try :
+#     print(5/0) #ZeroDivisionError: division by zero
+# except ZeroDivisionError:
+#     print('ZeroDivisionError')
+#====================================================
+
 print("Give me two numbers, and I'll divide them.")
 print("Enter 'q' to quit.")
 

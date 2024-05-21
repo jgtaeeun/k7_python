@@ -1,5 +1,7 @@
 from pathlib import Path
+import os
 
+os.chdir('exceptions')
 
 def count_words(path):
     """Count the approximate number of words in a file."""
