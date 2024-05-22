@@ -21,4 +21,6 @@ for value in poss_results:
 
 # Visualize the results.
 fig = px.bar(x=poss_results, y=frequencies)
+# fig = px.line(x=poss_results, y=frequencies)
+# fig = px.scatter(x=poss_results, y=frequencies)
 fig.show()
