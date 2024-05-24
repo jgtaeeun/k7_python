@@ -48,7 +48,8 @@ while True:
                 ship_rect.x=ship_rect.x + 10
               if alien_rect.x < screen_rect.width-   ship_rect.width:
                 alien_rect.x=alien_rect.x + 20  
-             
+              
+ 
     if left_pressed :
               if  ship_rect.x >0 :
                 ship_rect.x=ship_rect.x - 10

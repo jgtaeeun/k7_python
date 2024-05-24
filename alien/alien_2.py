@@ -41,18 +41,18 @@ while True:
     if aliens:
         screen_rect = screen_surf.get_rect()
         for alien in aliens:
+            alien.x += alien_x_direction * 2
             if screen_rect.width - alien.width < alien.x:
                 alien_x_direction = -1
-                alien_x_direction_changed = True
-                break
+                alien.x += alien_x_direction * 2
+                alien_x_direction_changed=True
+
             elif alien.x < screen_rect.x:
                 alien_x_direction = 1
-                alien_x_direction_changed = True
-                break
+                alien.x += alien_x_direction * 2
+                alien_x_direction_changed=True
 
         for alien in aliens:
-            #print(alien.y, alien_y_pos)
-            alien.x += alien_x_direction * 2
             if alien_x_direction_changed:
                 alien.y += alien_img.get_rect().height
 
