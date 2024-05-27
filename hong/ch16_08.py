@@ -24,7 +24,6 @@ import json
 import os
 import plotly.express as px
 
-os.chdir('hong')
 
 path=Path('1.0_month.geojson')
 contents= path.read_text(encoding='utf-8')    #데이터파일을 문자열로 읽음

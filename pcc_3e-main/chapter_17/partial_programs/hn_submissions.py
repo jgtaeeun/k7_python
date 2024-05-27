@@ -12,7 +12,7 @@ print(f"Status code: {r.status_code}")
 submission_ids = r.json()
 
 submission_dicts = []
-for submission_id in submission_ids[:5]:
+for submission_id in submission_ids[:5]:   #[40484591, 40485313, 40487419, 40484930, 40486991]
     # Make a new API call for each submission.
     url = f"https://hacker-news.firebaseio.com/v0/item/{submission_id}.json"
     r = requests.get(url)

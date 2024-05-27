@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 import json
 
-os.chdir('hong')
+
 
 path=Path('austin_weather_2024.csv')
 lines=path.read_text().splitlines()
